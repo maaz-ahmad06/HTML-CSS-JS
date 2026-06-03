@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arctic Breeze | Premium Portable Cooling</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-snowflake gradient-icon"></i>
+            <span>ARCTIC BREEZE</span>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="nav-links" id="navLinks">
+            <a href="#" class="nav-item active" data-target="home">Home</a>
+            <a href="#" class="nav-item" data-target="features">Features</a>
+            <a href="#" class="nav-item" data-target="shop">Shop Range</a>
+            <a href="#" class="nav-item" data-target="reviews">Reviews</a>
+            <a href="#" class="nav-item" data-target="contact">Contact & Locations</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <section id="home" class="page-view active">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <span class="badge">The Ultimate Summer Essential</span>
+                    <h1>Stay Cool, <br><span class="gradient-text">Anywhere.</span></h1>
+                    <p>High-performance turbo cooling meets sleek, premium engineering. Experience an instant frozen blast on the hottest summer days.</p>
+                    <div class="hero-cta">
+                        <button class="btn btn-primary" onclick="switchPage('shop')">Shop Collection <i class="fa-solid fa-arrow-right"></i></button>
+                        <button class="btn btn-secondary" onclick="switchPage('features')">Explore Tech</button>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="pink.jpg" alt="Arctic Breeze Premium Portable Turbo Fan in Sakura Pink" class="hero-product-img">
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="page-view">
+            <div class="section-header">
+                <h2>Engineered for Excellence</h2>
+                <p>Small package. Untamed arctic power built with baseline premium tech specs.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fa-solid fa-microchip feature-icon"></i>
+                    <h3>Smart LED Display</h3>
+                    <p>Track your precise battery life percentages, current speed gears, and charging metrics instantly.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-wind feature-icon"></i>
+                    <h3>6-Speed Regulation</h3>
+                    <p>From a gentle whisper-quiet breeze to a powerful 100% turbo-blast of localized freezing air currents.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-battery-full feature-icon"></i>
+                    <h3>Type-C Fast Charge</h3>
+                    <p>Equipped with universal USB-C charging interfaces to power up rapidly via wall plugs, laptops, or power banks.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-lightbulb feature-icon"></i>
+                    <h3>Emergency Flashlight</h3>
+                    <p>A built-in premium bottom light ensures you are never left stranded in dark spaces or evening strolls.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="shop" class="page-view">
+            <div class="section-header">
+                <h2>Choose Your Style</h2>
+                <p>Select from our core matte premium collection to experience immediate baseline relief.</p>
+            </div>
+            <div class="shop-grid">
+                <div class="product-card">
+                    <div class="product-img-box pink-bg">
+                        <img src="pink.jpg" alt="Sakura Pink Arctic Breeze" class="catalog-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arctic Breeze Mini - Sakura Pink</h3>
+                        <div class="rating"><i class="fa-solid fa-star"></i> 4.9 (142 reviews)</div>
+                        <div class="price">$29.99 <span class="old-price">$45.00</span></div>
+                        <button class="btn btn-buy">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-box dark-bg">
+                        <img src="black.jpg" alt="Obsidian Black Arctic Breeze" class="catalog-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arctic Breeze Mini - Obsidian Black</h3>
+                        <div class="rating"><i class="fa-solid fa-star"></i> 5.0 (98 reviews)</div>
+                        <div class="price">$29.99 <span class="old-price">$45.00</span></div>
+                        <button class="btn btn-buy">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img-box light-bg">
+                        <img src="white.jpg" alt="Glacier White Arctic Breeze" class="catalog-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Arctic Breeze Mini - Glacier White</h3>
+                        <div class="rating"><i class="fa-solid fa-star"></i> 4.8 (210 reviews)</div>
+                        <div class="price">$29.99 <span class="old-price">$45.00</span></div>
+                        <button class="btn btn-buy">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="page-view">
+            <div class="section-header">
+                <h2>Loved By Millions Worldwide</h2>
+                <p>Hear from real people enjoying the cool air wave over the summer heat.</p>
+            </div>
+            <div class="reviews-container">
+                <blockquote class="review-card">
+                    <p class="review-text">"This fan completely saved my summer commutes. The battery lasts forever and the digital display looks so high-tech. Absolutely worth every single penny."</p>
+                    <cite class="review-author">— Sarah K., Verified Buyer</cite>
+                </blockquote>
+                <blockquote class="review-card">
+                    <p class="review-text">"The turbo air pressure on this thing is unreal! It actually blows crisp, cool air instead of just circulating the hot air around me."</p>
+                    <cite class="review-author">— Marcus T., Tech Reviewer</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="contact" class="page-view">
+            <div class="section-header">
+                <h2>Get In Touch & Visit Us</h2>
+                <p>Have questions about shipping, tracking, or bulk retail store orders?</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info-block">
+                    <h3>Our Main Headquarters</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Islamia College Peshawar</p>
+                    <p><i class="fa-solid fa-phone"></i> +92 333 1234567</p>
+                    <p><i class="fa-solid fa-envelope"></i> support@arcticbreeze.com</p>
+                    <div class="hours">
+                        <h4>Operating Hours:</h4>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p>Saturday: 10:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
+                <div class="contact-wrapper">
+                    <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                        <fieldset class="form-fieldset">
+                            <legend class="form-legend">Send An Instant Inquiry</legend>
+                            
+                            <div class="form-group">
+                                <label for="userName">Full Name</label>
+                                <input type="text" id="userName" required placeholder="John Doe">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="userEmail">Email Address</label>
+                                <input type="email" id="userEmail" required placeholder="john@example.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="userMessage">Message</label>
+                                <textarea id="userMessage" rows="4" required placeholder="How can our team help you stay cool?"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block">Submit Inquiries</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 ARCTIC BREEZE Co. All rights reserved. Engineered for lifestyle comfort.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
