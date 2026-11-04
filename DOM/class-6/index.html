@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+</head>
+<body>
+    <form action="" id="studentForm">
+        <label for="username">Username: <br></label>
+        <input type="text" id="username">
+        <br><br>
+
+        <label for="">Gender: <br></label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <br><br>
+
+        <label for="">Languages: <br></label>
+        <input type="checkbox" name="languages" value="English">English
+        <input type="checkbox" name="languages" value="Arabic">Arabic
+        <input type="checkbox" name="languages" value="Urdu">Urdu
+        <input type="checkbox" name="languages" value="Pashto">Pashto
+        <br><br>
+
+        <select name="country" id="country">
+            <option value="">Select Country</option>
+            <option value="pakistan">Pakistan</option>
+            <option value="iraq">Iraq</option>
+            <option value="turkey">Turkey</option>
+            <option value="nepal">Nepal</option>
+        </select>
+        <br><br>
+        <button id="btn">Show Result</button>
+        <p id="result"></p>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
